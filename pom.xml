@@ -1663,7 +1663,7 @@
       <repository>
           <id>cmi.releases</id>
           <name>CMI Releases</name>
-          <url>http://185.9.174.106:8081/nexus/content/repositories/releases</url>
+          <url>http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/releases</url>
           <releases>
               <enabled>true</enabled>
           </releases>
@@ -1674,7 +1674,7 @@
       <repository>
           <id>cmi.snapshots</id>
           <name>CMI Snapshots</name>
-          <url>http://185.9.174.106:8081/nexus/content/repositories/snapshots</url>
+          <url>http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/snapshots</url>
           <releases>
               <enabled>false</enabled>
           </releases>
@@ -1706,11 +1706,11 @@
     <distributionManagement>
         <repository>
             <id>repo.cmi-releases</id>
-            <url>http://185.9.174.106:8081/nexus/content/repositories/releases</url>
+            <url>http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>repo.cmi-snapshots</id>
-            <url>http://185.9.174.106:8081/nexus/content/repositories/snapshots</url>
+            <url>http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
