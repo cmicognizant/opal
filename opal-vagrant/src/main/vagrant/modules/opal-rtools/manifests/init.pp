@@ -1,6 +1,6 @@
 class opal-rtools () {
   yumrepo { "cmi":
-    baseurl   => "https://repo.thehyve.nl/content/repositories/releases",
+    baseurl   => "http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/releases",
     descr     => "CMI Releases Repository",
     enabled   => 1,
     gpgcheck  => 0

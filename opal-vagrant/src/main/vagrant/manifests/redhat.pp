@@ -7,8 +7,8 @@ package { $packages:
 }
 
 yumrepo { "opal":
-  #baseurl   => "http://185.9.174.106:8081/nexus/content/groups/public",
-  baseurl   => "http://185.9.174.106:8081/nexus/content/repositories/snapshots",
+  #baseurl   => "http://translationeelonderzoek.cmi-vzw.be/nexus/content/groups/public",
+  baseurl   => "http://translationeelonderzoek.cmi-vzw.be/nexus/content/repositories/snapshots",
   descr     => "Opal Repository",
   enabled   => 1,
   gpgcheck  => 0
@@ -17,8 +17,8 @@ yumrepo { "opal":
 }
 
 yumrepo { "cmi":
-  #baseurl   => "http://185.9.174.106:8081/nexus/content/groups/public",
-  baseurl   => "http://185.9.174.106:8081/nexus/repositories/releases",
+  #baseurl   => "http://translationeelonderzoek.cmi-vzw.be/nexus/content/groups/public",
+  baseurl   => "http://translationeelonderzoek.cmi-vzw.be/nexus/repositories/releases",
   descr     => "CMI Releases Repository",
   enabled   => 1,
   gpgcheck  => 0
