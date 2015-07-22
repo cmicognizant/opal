@@ -14,6 +14,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import com.google.gwt.core.client.GWT;
 import org.obiba.opal.web.gwt.app.client.magma.derive.helper.DerivationHelper;
 import org.obiba.opal.web.gwt.app.client.magma.derive.helper.OpenTextualVariableDerivationHelper;
 import org.obiba.opal.web.gwt.app.client.magma.derive.helper.OpenTextualVariableDerivationHelper.Method;
@@ -133,8 +134,9 @@ public class DeriveOpenTextualVariableStepPresenter
   private final class DeriveOpenTextualVariableMapStepInHandler implements StepInHandler {
     @Override
     public void onStepIn() {
-      if(derivationHelper == null || derivationHelper.getMethod() != getView().getMethod()) {
 
+      if(derivationHelper == null ||
+              derivationHelper.getMethod().toString().equals(getView().getMethod().toString())) {
         final List<String> destinationCategories = DerivationHelper.getDestinationCategories(getDerivedVariable());
         getView().populateValues(new ArrayList<ValueMapEntry>(), destinationCategories);
 
@@ -161,7 +163,7 @@ public class DeriveOpenTextualVariableStepPresenter
                 getView().populateValues(derivationHelper.getValueMapEntries(), destinationCategories);
               }
             }) //
-            .get().send();
+                .get().send();
       }
     }
 
