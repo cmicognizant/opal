@@ -136,7 +136,7 @@ public class DeriveOpenTextualVariableStepPresenter
     public void onStepIn() {
 
       if(derivationHelper == null ||
-              derivationHelper.getMethod().toString().equals(getView().getMethod().toString())) {
+              derivationHelper.getMethod().toString().equalsIgnoreCase(getView().getMethod().toString())) {
         final List<String> destinationCategories = DerivationHelper.getDestinationCategories(getDerivedVariable());
         getView().populateValues(new ArrayList<ValueMapEntry>(), destinationCategories);
 
