@@ -133,7 +133,6 @@ public class DeriveOpenTextualVariableStepPresenter
   private final class DeriveOpenTextualVariableMapStepInHandler implements StepInHandler {
     @Override
     public void onStepIn() {
-      if(derivationHelper == null || derivationHelper.getMethod() != getView().getMethod()) {
 
         final List<String> destinationCategories = DerivationHelper.getDestinationCategories(getDerivedVariable());
         getView().populateValues(new ArrayList<ValueMapEntry>(), destinationCategories);
@@ -163,7 +162,6 @@ public class DeriveOpenTextualVariableStepPresenter
             }) //
             .get().send();
       }
-    }
 
   }
 
