@@ -381,7 +381,7 @@
                                   fi
                                   if [ -L $python_lib/opal_tools_lib.py ]; then
                                     unlink $python_lib/opal_tools_lib.py
-                                  fi 
+                                  fi
                                   ln -s /usr/share/pyshared/opal $python_lib/opal
                                   ln -s /usr/share/pyshared/opal_tools_lib.py $python_lib/opal_tools_lib.py
                               </script>
