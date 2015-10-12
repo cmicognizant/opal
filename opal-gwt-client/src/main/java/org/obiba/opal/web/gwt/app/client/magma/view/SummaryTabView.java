@@ -225,7 +225,7 @@ public class SummaryTabView extends ViewWithUiHandlers<SummaryTabUiHandlers> imp
         });
 
     summary.add(
-        new TextSummaryView(textSummaryDto, valuesByMissing.get(false), valuesByMissing.get(true), totals[0], totals[1],
+        new TextSummaryView(dto.getResource(),textSummaryDto, valuesByMissing.get(false), valuesByMissing.get(true), totals[0], totals[1],
             textSummaryDto.getOtherFrequency(), DEFAULT_MAX_TEXT_RESULTS)
     );
   }

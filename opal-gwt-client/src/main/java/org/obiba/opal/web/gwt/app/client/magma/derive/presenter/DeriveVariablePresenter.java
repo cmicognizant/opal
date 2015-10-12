@@ -380,7 +380,13 @@ public class DeriveVariablePresenter extends WizardPresenterWidget<DeriveVariabl
     public void onStepIn() {
       getView().clearErrors();
       derivationPresenter.generateDerivedVariable();
-      scriptEvaluationPresenter.setOriginalTable(derivationPresenter.getOriginalTable(), false);
+      if (derivationPresenter.getOriginalTable().getValueSetCount() == 0 && derivationPresenter.getDestinationTable()!=null) {
+        scriptEvaluationPresenter.setOriginalTable(derivationPresenter.getDestinationTable(), false);
+      }
+      else {
+        scriptEvaluationPresenter.setOriginalTable(derivationPresenter.getOriginalTable(), false);
+      }
+
       scriptEvaluationPresenter.setOriginalVariable(derivationPresenter.getDerivedVariable());
     }
   }
